@@ -1,12 +1,10 @@
-import {Hero, Server} from "./pages";
-import Heading from "./components/heading.tsx";
+import {Server,QrMain} from "./pages";
 
 const App = () => {
     return (
         <div>
-            <Hero/>
+            <QrMain/>
             <Server/>
-             
         </div>
     );
 };
