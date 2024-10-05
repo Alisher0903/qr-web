@@ -15,7 +15,9 @@ import {
     ReportsAnalysis,
     SubscriptionPayments,
     Quvvatlash,
-    TelegramBot
+    TelegramBot,
+    ProgramsCashback,
+    IntegrationSystems
 } from "./pages";
 
 const App = () => {
@@ -30,6 +32,8 @@ const App = () => {
             <NotificationsNotices/>
             <ReportsAnalysis/>
             <SubscriptionPayments/>
+            <ProgramsCashback/>
+            <IntegrationSystems/>
 
             <Server/>
             <div className="mt-10">

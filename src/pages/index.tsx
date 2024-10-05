@@ -7,6 +7,8 @@ export {default as TransactionManagement} from './alisher/transaction-management
 export {default as NotificationsNotices} from './alisher/notifications-notices.tsx'
 export {default as ReportsAnalysis} from './alisher/reports-analysis.tsx'
 export {default as SubscriptionPayments} from './alisher/subscription-payments.tsx'
+export {default as ProgramsCashback} from './alisher/programs-cashback.tsx'
+export {default as IntegrationSystems} from './alisher/integration-systems.tsx'
 
 
 export {default as Server} from './omadbek/Server.tsx'
