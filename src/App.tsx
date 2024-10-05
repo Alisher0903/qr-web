@@ -20,6 +20,7 @@ import {
     IntegrationSystems
 } from "./pages";
 import Hamkorlik from "./pages/omadbek/Hamkorlik";
+import Hisob from "./pages/omadbek/Hisob";
 import Kassa from "./pages/omadbek/Kassa";
 import Kelajek from "./pages/omadbek/Kelajek";
 import Statistik from "./pages/omadbek/statistik";
@@ -61,6 +62,9 @@ const App = () => {
             </div >
             <div className="mt-12">
                 <Yangilash />
+            </div>
+            <div className="mt-20">
+                <Hisob/>
             </div>
             <div className="mt-20">
                 <Statistik/>
