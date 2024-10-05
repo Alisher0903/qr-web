@@ -10,26 +10,37 @@ import {
     TransactionManagement,
     SuniyIntelekt,
     Lenguage,
-    XavfSizlik
+    XavfSizlik,
+    NotificationsNotices,
+    ReportsAnalysis,
+    SubscriptionPayments,
+    Quvvatlash,
+    TelegramBot,
+    ProgramsCashback,
+    IntegrationSystems
 } from "./pages";
 import Hamkorlik from "./pages/omadbek/Hamkorlik";
 import Kassa from "./pages/omadbek/Kassa";
 import Kelajek from "./pages/omadbek/Kelajek";
-import Quvvatlash from "./pages/omadbek/quvvatlash";
 import Statistik from "./pages/omadbek/statistik";
-import TelegramBot from "./pages/omadbek/TelegramBot";
 import Tizim from "./pages/omadbek/Tizim";
 import Yangilash from "./pages/omadbek/Yangilash";
+
 
 const App = () => {
     return (
         <div>
-            <QrMain />
-            <PurposeProject />
-            <MainComponents />
-            <QrCreate />
-            <PaymentProcess />
-            <TransactionManagement />
+            <QrMain/>
+            <PurposeProject/>
+            <MainComponents/>
+            <QrCreate/>
+            <PaymentProcess/>
+            <TransactionManagement/>
+            <NotificationsNotices/>
+            <ReportsAnalysis/>
+            <SubscriptionPayments/>
+            <ProgramsCashback/>
+            <IntegrationSystems/>
 
             <Server />
             <div className="mt-10">
