@@ -3,7 +3,7 @@ import {Cards} from "../components";
 const Hero = () => {
     return (
         <div>
-            <Cards/>
+            <Cards title={`dkj`} description={`ebfuwey fbkuae`}/>
         </div>
     );
 };
