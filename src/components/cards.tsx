@@ -4,12 +4,13 @@ interface MobileAppCardProps {
   imgSrc?: string;
   title: string;
   description: string;
+  imgStyle?: string;
 }
 
-const Cards: React.FC<MobileAppCardProps> = ({ imgSrc, title, description }) => {
+const Cards: React.FC<MobileAppCardProps> = ({ imgSrc, title, description, imgStyle }) => {
   return (
     <div className="w-full flex flex-col justify-start">
-      {imgSrc && <img src={imgSrc} alt="Mobile App Icon" className="w-16 h-16 rounded-md" />}
+      {imgSrc && <img src={imgSrc} alt="Mobile App Icon" className={`${imgStyle ? imgStyle : 'w-16 h-16'} rounded-md`}/>}
       <h2 className={`text-2xl font-bold text-darkBlue ${imgSrc && 'mt-5'}`}>{title}</h2>
       <p className="text-darkBlue mt-3">{description}</p>
     </div>

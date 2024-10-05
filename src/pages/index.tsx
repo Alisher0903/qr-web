@@ -2,6 +2,7 @@ export {default as QrMain} from './alisher/qr-main.tsx'
 export {default as PurposeProject} from './alisher/purpose-project.tsx'
 export {default as MainComponents} from './alisher/main-components.tsx'
 export {default as QrCreate} from './alisher/qr-create.tsx'
+export {default as PaymentProcess} from './alisher/payment-process.tsx'
 
 export {default as Server} from './omadbek/Server.tsx'
 export {default as Mobile} from './omadbek/mobile.tsx'

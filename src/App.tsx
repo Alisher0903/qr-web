@@ -1,4 +1,4 @@
-import {Server, QrMain, PurposeProject, MainComponents, Mobile, WebSayt, QrCreate} from "./pages";
+import {Server, QrMain, PurposeProject, MainComponents, Mobile, WebSayt, QrCreate, PaymentProcess} from "./pages";
 import SuniyIntelekt from "./pages/omadbek/suniyIntelekt";
 import XavfSizlik from "./pages/omadbek/xavfsizlik";
 
@@ -9,6 +9,7 @@ const App = () => {
             <PurposeProject/>
             <MainComponents/>
             <QrCreate/>
+            <PaymentProcess/>
 
             <Server/>
             <div className="mt-10">
