@@ -1,5 +1,8 @@
-export {default as Hero} from './Hero.tsx'
 export {default as QrMain} from './alisher/qr-main.tsx'
 export {default as Server} from './omadbek/Server.tsx'
 export {default as Mobile} from './omadbek/mobile.tsx'
 export {default as WebSayt} from './omadbek/WebSayt.tsx'
+export {default as PurposeProject} from './alisher/purpose-project.tsx'
+export {default as MainComponents} from './alisher/main-components.tsx'
+
+
