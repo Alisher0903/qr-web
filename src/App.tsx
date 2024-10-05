@@ -10,10 +10,13 @@ import {
     TransactionManagement,
     SuniyIntelekt,
     Lenguage,
-    XavfSizlik
+    XavfSizlik,
+    NotificationsNotices,
+    ReportsAnalysis,
+    SubscriptionPayments,
+    Quvvatlash,
+    TelegramBot
 } from "./pages";
-import Quvvatlash from "./pages/omadbek/quvvatlash";
-import TelegramBot from "./pages/omadbek/TelegramBot";
 
 const App = () => {
     return (
@@ -24,6 +27,9 @@ const App = () => {
             <QrCreate/>
             <PaymentProcess/>
             <TransactionManagement/>
+            <NotificationsNotices/>
+            <ReportsAnalysis/>
+            <SubscriptionPayments/>
 
             <Server/>
             <div className="mt-10">

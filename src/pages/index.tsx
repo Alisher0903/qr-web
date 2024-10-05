@@ -4,6 +4,9 @@ export {default as MainComponents} from './alisher/main-components.tsx'
 export {default as QrCreate} from './alisher/qr-create.tsx'
 export {default as PaymentProcess} from './alisher/payment-process.tsx'
 export {default as TransactionManagement} from './alisher/transaction-management.tsx'
+export {default as NotificationsNotices} from './alisher/notifications-notices.tsx'
+export {default as ReportsAnalysis} from './alisher/reports-analysis.tsx'
+export {default as SubscriptionPayments} from './alisher/subscription-payments.tsx'
 
 
 export {default as Server} from './omadbek/Server.tsx'
