@@ -20,5 +20,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "src/pages/omadbek/TelegramBot.tsx"]
+  "include": ["src", "src/pages/omadbek/TelegramBot.tsx", "src/pages/omadbek/Kassa.tsx"]
 }
