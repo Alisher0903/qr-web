@@ -1,26 +1,37 @@
-import { Server, QrMain, PurposeProject, MainComponents, Mobile, WebSayt, QrCreate, PaymentProcess } from "./pages";
-import Lenguage from "./pages/omadbek/Lenguage";
-import SuniyIntelekt from "./pages/omadbek/suniyIntelekt";
-import XavfSizlik from "./pages/omadbek/xavfsizlik";
+import {
+    Server,
+    QrMain,
+    PurposeProject,
+    MainComponents,
+    Mobile,
+    WebSayt,
+    QrCreate,
+    PaymentProcess,
+    TransactionManagement,
+    SuniyIntelekt,
+    Lenguage,
+    XavfSizlik
+} from "./pages";
 
 const App = () => {
     return (
         <div>
-            <QrMain />
-            <PurposeProject />
-            <MainComponents />
-            <QrCreate />
-            <PaymentProcess />
+            <QrMain/>
+            <PurposeProject/>
+            <MainComponents/>
+            <QrCreate/>
+            <PaymentProcess/>
+            <TransactionManagement/>
 
-            <Server />
+            <Server/>
             <div className="mt-10">
-                <Mobile />
+                <Mobile/>
             </div>
-            <WebSayt />
-            <SuniyIntelekt />
-            <XavfSizlik />
+            <WebSayt/>
+            <SuniyIntelekt/>
+            <XavfSizlik/>
             <div className="mt-10">
-                <Lenguage />
+                <Lenguage/>
             </div>
 
         </div>
