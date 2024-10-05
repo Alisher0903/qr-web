@@ -17,7 +17,11 @@ import {
     Quvvatlash,
     TelegramBot,
     ProgramsCashback,
-    IntegrationSystems
+    IntegrationSystems,
+    LocationPayment,
+    Networks,
+    CrossOpportunities,
+    ControlVoice
 } from "./pages";
 import Hamkorlik from "./pages/omadbek/Hamkorlik";
 import Kassa from "./pages/omadbek/Kassa";
@@ -41,8 +45,14 @@ const App = () => {
             <SubscriptionPayments/>
             <ProgramsCashback/>
             <IntegrationSystems/>
+            <LocationPayment/>
+            <Networks/>
+            <CrossOpportunities/>
+            <ControlVoice/>
 
-            <Server />
+            <div className={'mt-16'}>
+                <Server />
+            </div>
             <div className="mt-10">
                 <Mobile />
             </div>
