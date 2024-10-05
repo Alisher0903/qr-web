@@ -1,7 +1,9 @@
+import {Hero} from "./pages";
+
 const App = () => {
     return (
         <div>
-            app
+            <Hero/>
         </div>
     );
 };
