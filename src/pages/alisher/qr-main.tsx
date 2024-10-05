@@ -4,7 +4,7 @@ import {styles} from "../../const.ts";
 
 const QrMain = () => {
     return (
-        <div className={`max-container flex lg:flex-nowrap items-center gap-10 py-10`}>
+        <div className={`max-container min-h-[80vh] flex lg:flex-nowrap items-center gap-10 py-10`}>
             <div className={`w-[60%]`}>
                 <Heading text={`QR-kod orqali to'lov tizimi`}/>
                 <p className={`${styles.par} mt-6`}>
