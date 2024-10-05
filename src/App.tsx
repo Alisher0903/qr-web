@@ -1,7 +1,4 @@
-
-
-
-import {Server, QrMain, PurposeProject, MainComponents,Mobile, WebSayt} from "./pages";
+import {Server, QrMain, PurposeProject, MainComponents, Mobile, WebSayt, QrCreate} from "./pages";
 
 const App = () => {
     return (
@@ -9,10 +6,11 @@ const App = () => {
             <QrMain/>
             <PurposeProject/>
             <MainComponents/>
+            <QrCreate/>
 
             <Server/>
             <div className="mt-10">
-            <Mobile/>
+                <Mobile/>
             </div>
             <WebSayt/>
         </div>
