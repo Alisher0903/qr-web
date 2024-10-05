@@ -31,7 +31,7 @@ const PurposeProject = () => {
                 {data.map(item => (
                     <div key={item.id} className={'flex items-start justify-start gap-7 mt-10'}>
                         <div
-                            className={'bg-lightGreen border border-green/80 flex justify-center items-center text-xl text-darkBlue rounded-md w-10 h-10 font-bold mt-1.5'}>
+                            className={'bg-lightGreen border border-green/80 flex justify-center items-center text-xl text-darkBlue rounded-md w-10 h-10 font-bold mt-1'}>
                             {item.id}
                         </div>
                         <Cards title={item.name} description={item.des}/>
