@@ -1,5 +1,5 @@
 import Heading from '../../components/heading';
-import qrApp from "../../assets/qr-section17.avif";
+import qrApp from "../../assets/secure-section21.avif";
 import { Cards } from '../../components';
 
 const data = [
