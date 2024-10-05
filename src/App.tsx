@@ -1,4 +1,4 @@
-import {Server, QrMain, PurposeProject, MainComponents,Mobile, WebSayt,QrCreate} from "./pages";
+import {Server, QrMain, PurposeProject, MainComponents, Mobile, WebSayt, QrCreate} from "./pages";
 
 const App = () => {
     return (
@@ -10,7 +10,7 @@ const App = () => {
 
             <Server/>
             <div className="mt-10">
-            <Mobile/>
+                <Mobile/>
             </div>
             <WebSayt/>
         </div>
