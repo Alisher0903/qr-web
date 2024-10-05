@@ -9,6 +9,10 @@ export {default as ReportsAnalysis} from './alisher/reports-analysis.tsx'
 export {default as SubscriptionPayments} from './alisher/subscription-payments.tsx'
 export {default as ProgramsCashback} from './alisher/programs-cashback.tsx'
 export {default as IntegrationSystems} from './alisher/integration-systems.tsx'
+export {default as LocationPayment} from './alisher/location-payment.tsx'
+export {default as Networks} from './alisher/networks.tsx'
+export {default as CrossOpportunities} from './alisher/cross-opportunities.tsx'
+export {default as ControlVoice} from './alisher/control-voice.tsx'
 
 
 export {default as Server} from './omadbek/Server.tsx'
