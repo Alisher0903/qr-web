@@ -12,6 +12,8 @@ import {
     Lenguage,
     XavfSizlik
 } from "./pages";
+import Quvvatlash from "./pages/omadbek/quvvatlash";
+import TelegramBot from "./pages/omadbek/TelegramBot";
 
 const App = () => {
     return (
@@ -28,10 +30,14 @@ const App = () => {
                 <Mobile/>
             </div>
             <WebSayt/>
+            <TelegramBot/>
             <SuniyIntelekt/>
             <XavfSizlik/>
             <div className="mt-10">
                 <Lenguage/>
+            </div>
+            <div className="mt-12">
+                <Quvvatlash/>
             </div>
 
         </div>
