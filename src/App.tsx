@@ -1,9 +1,11 @@
-import {Server,QrMain} from "./pages";
+import {Server, QrMain, PurposeProject} from "./pages";
 
 const App = () => {
     return (
         <div>
             <QrMain/>
+            <PurposeProject/>
+
             <Server/>
         </div>
     );
