@@ -1,4 +1,6 @@
 import {Server, QrMain, PurposeProject, MainComponents, Mobile, WebSayt, QrCreate} from "./pages";
+import SuniyIntelekt from "./pages/omadbek/suniyIntelekt";
+import XavfSizlik from "./pages/omadbek/xavfsizlik";
 
 const App = () => {
     return (
@@ -13,6 +15,8 @@ const App = () => {
                 <Mobile/>
             </div>
             <WebSayt/>
+            <SuniyIntelekt/>
+            <XavfSizlik/>
         </div>
     );
 };
