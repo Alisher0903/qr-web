@@ -1,12 +1,11 @@
-
-import Heading from '../../components/heading'
+import Heading from '../../components/heading';
 import qrApp from "../../assets/qr-section17.avif";
 import { Cards } from '../../components';
 
 const Mobile = () => {
     return (
-        <div className={`max-container min-h-[80vh] flex lg:flex-nowrap items-center gap-10 py-10`}>
-            <div className={`w-[60%]`}>
+        <div className={`max-container min-h-[80vh] flex flex-wrap lg:flex-nowrap items-center gap-10 py-10 md:px-10`}>
+            <div className={`w-full lg:w-[60%] px-4`}>
                 <Heading text={`Mobil ilovalar`} />
                 <div className='bg-lightGreen p-4 mt-4 rounded-lg'>
                     <Cards
@@ -27,11 +26,11 @@ const Mobile = () => {
                     />
                 </div>
             </div>
-            <div className={`w-[50%] overflow-hidden shadow-lg rounded-md`}>
-                <img src={qrApp} alt="qr img" className={`w-full h-full`} />
+            <div className={`w-full lg:w-[50%] mt-10 lg:mt-0 overflow-hidden shadow-lg rounded-md`}>
+                <img src={qrApp} alt="qr img" className={`w-full h-auto lg:h-full`} />
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Mobile
+export default Mobile;

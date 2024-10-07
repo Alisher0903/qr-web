@@ -29,7 +29,7 @@ const data = [
 
 const SuniyIntelekt = () => {
     return (
-        <div className={`max-container min-h-[60vh] py-10`}>
+        <div className={`max-container min-h-[60vh] py-10 p-4`}>
             <Heading text={`Sun'iy intellekt (AI) moduli`}/>
             <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 mt-12`}>
                 {data.map(item => (

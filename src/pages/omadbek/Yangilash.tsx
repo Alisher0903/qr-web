@@ -28,19 +28,19 @@ const data = [
 
 const Yangilash = () => {
     return (
-        <div className={`max-container min-h-[90vh] flex lg:flex-nowrap items-center gap-10 py-10`}>
-            <div className={`w-[60%]`}>
+        <div className={`max-container min-h-[90vh] flex flex-col lg:flex-row items-center gap-10 py-10`}>
+            <div className={`w-full lg:w-[60%] p-4`}>
                 <Heading text={`Tizimni yangilash`} />
                 {data.map(item => (
                     <div key={item.id} className={'flex items-start justify-start gap-7 mt-10'}>
                         <div className='mt-10 justify-center items-center'>
-                            <img src={item.img} alt="" className="transform rotate-90" />
+                            <img src={item.img} alt="" className="transform rotate-90 w-full h-20 md:w-60 md:h-24 " />
                         </div>
                         <Cards title={item.name} description={item.des} />
                     </div>
                 ))}
             </div>
-            <div className={`w-[40%] h-full`}>
+            <div className={`w-full lg:w-[40%] h-full`}>
                 <img src={qrApp} alt="people img" className={`w-full h-full shadow-lg rounded-md`} />
             </div>
         </div>

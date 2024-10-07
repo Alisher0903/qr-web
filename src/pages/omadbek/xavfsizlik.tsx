@@ -22,11 +22,9 @@ const data = [
 
 const XavfSizlik = () => {
     return (
-        <div className={`max-container min-h-[80vh] flex lg:flex-nowrap items-center gap-10 py-10`}>
-            <div className={`w-[60%]`}>
+        <div className={`max-container min-h-[80vh] flex flex-col lg:flex-row items-center gap-10 py-10`}>
+            <div className={`w-full lg:w-[60%] p-4`}>
                 <Heading text={`Xavfsizlik choralari`} />
-                
-                {/* Map through the data array to create Cards */}
                 {data.map(({ id, name, des }) => (
                     <div className='bg-lightGreen p-4 mt-4 rounded-lg' key={id}>
                         <Cards
@@ -37,7 +35,7 @@ const XavfSizlik = () => {
                 ))}
                 
             </div>
-            <div className={`w-[50%] overflow-hidden shadow-lg rounded-md`}>
+            <div className={`w-full lg:w-[40%] overflow-hidden shadow-lg rounded-md mt-4 lg:mt-0`}>
                 <img src={qrApp} alt="qr img" className={`w-full h-full`} />
             </div>
         </div>

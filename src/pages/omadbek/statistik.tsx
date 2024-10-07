@@ -21,7 +21,7 @@ const data = [
 
 const Statistik = () => {
     return (
-        <div className="max-container">
+        <div className="max-container p-4">
             <Heading text="Statistika va tahlil" />
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
                 {data.map(({ id, name, des }) => (

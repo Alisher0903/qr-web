@@ -21,7 +21,7 @@ const data = [
 
 const Kassa = () => {
     return (
-        <div className="max-container">
+        <div className="max-container p-4">
             <Heading text="Mobil kassa" />
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
                 {data.map(({ id, name, des }) => (

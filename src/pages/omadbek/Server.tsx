@@ -2,9 +2,9 @@ import { Cards } from "../../components";
 import Heading from "../../components/heading";
 const Server = () => {
     return (
-        <div className="max-container">
+        <div className="max-container p-4">
             <Heading text="Markaziy server" />
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 p-4">
                 <Cards
                     imgSrc={""}
                     title="API va Backend mantig'i"

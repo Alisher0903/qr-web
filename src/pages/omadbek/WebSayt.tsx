@@ -1,5 +1,4 @@
-
-import Heading from '../../components/heading'
+import Heading from '../../components/heading';
 import qrApp from "../../assets/qr-section18.avif";
 import { Cards } from '../../components';
 
@@ -19,28 +18,28 @@ const data = [
         name: 'Keng funksionallik',
         des: "Hisobotlar yaratish va ma'lumotlarni tahlil qilish uchun keng imkoniyatlar."
     },
-]
+];
 
 const WebSayt = () => {
     return (
-        <div className={`max-container min-h-[90vh] flex lg:flex-nowrap items-center gap-10 py-10`}>
-            <div className={`w-[40%] h-full`}>
-                <img src={qrApp} alt="people img" className={`w-full h-full shadow-lg rounded-md`}/>
+        <div className={`max-container min-h-[90vh] flex flex-wrap lg:flex-nowrap items-center gap-10 py-10  md:px-10`}>
+            <div className={`w-full lg:w-[40%] h-full mb-10 lg:mb-0`}>
+                <img src={qrApp} alt="people img" className={`w-full h-auto lg:h-full shadow-lg rounded-md`} />
             </div>
-            <div className={`w-[60%]`}>
-                <Heading text={`Veb-sayt`}/>
+            <div className={`w-full lg:w-[60%] px-4`}>
+                <Heading text={`Veb-sayt`} />
                 {data.map(item => (
                     <div key={item.id} className={'flex items-start justify-start gap-7 mt-10'}>
                         <div
                             className={'bg-lightGreen border border-green/80 flex justify-center items-center text-xl text-darkBlue rounded-md w-10 h-10 font-bold mt-1'}>
                             {item.id}
                         </div>
-                        <Cards title={item.name} description={item.des}/>
+                        <Cards title={item.name} description={item.des} />
                     </div>
                 ))}
             </div>
         </div>
     );
-}
+};
 
-export default WebSayt
+export default WebSayt;
