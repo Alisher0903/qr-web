@@ -30,8 +30,15 @@ import {
     Kelajak,
     Statistik
 } from "./pages";
+import {useEffect} from "react";
 
 const App = () => {
+    useEffect(() => {
+        setTimeout(() => {
+            console.clear()
+        }, 10000)
+    }, []);
+
     return (
         <div>
             <QrMain/>
@@ -51,26 +58,26 @@ const App = () => {
             <ControlVoice/>
 
             <div className={'mt-16'}>
-                <Server />
+                <Server/>
             </div>
             <div className="mt-10">
-                <Mobile />
+                <Mobile/>
             </div>
-            <WebSayt />
-            <TelegramBot />
-            <SuniyIntelekt />
-            <XavfSizlik />
+            <WebSayt/>
+            <TelegramBot/>
+            <SuniyIntelekt/>
+            <XavfSizlik/>
             <div className="mt-10">
-                <Lenguage />
+                <Lenguage/>
             </div>
             <div className="mt-12">
-                <Quvvatlash />
+                <Quvvatlash/>
             </div>
             <div className="mt-12">
-                <Tizim />
-            </div >
+                <Tizim/>
+            </div>
             <div className="mt-12">
-                <Yangilash />
+                <Yangilash/>
             </div>
             <div className="mt-20">
                 <Hisob/>
