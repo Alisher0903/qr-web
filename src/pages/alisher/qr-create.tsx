@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Heading from "../../components/heading.tsx";
 import {Cards} from "../../components";
 import AOS from 'aos';
@@ -15,7 +15,9 @@ const data = [
 ]
 
 const QrCreate: React.FC = () => {
-    
+    useEffect(() => {
+        AOS.init({ duration: 1000 });
+    }, []);
     return (
         <div className={'flex justify-center items-center bg-bgDarkBlue w-full min-h-screen'}>
             <div className="w-[95%] lg:w-[60%] h-[90%] bg-white p-16 my-10 rounded-xl">
