@@ -30,7 +30,7 @@ const ControlVoice = () => {
     return (
         <div className={`max-container min-h-[100vh] flex flex-col lg:flex-row items-center gap-10 py-10`}>
             <div className={`w-full lg:w-[60%] px-4`}>
-                <Heading size={'text-4xl'} text={`Ovozli buyruqlar yordamida boshqarish`} />
+                <Heading size={'text-xl md:2xl lg:3xl'} text={`Ovozli buyruqlar yordamida boshqarish`} />
                 {data.map(item => (
                     <div key={item.id} className={'mt-8'}>
                         <Cards isIcon imgSrc={item.img} title={item.name} description={item.des} />

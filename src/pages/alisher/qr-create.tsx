@@ -5,7 +5,7 @@ import {Cards} from "../../components";
 const QrCreate: React.FC = () => {
     return (
         <div className={'flex justify-center items-center bg-bgDarkBlue w-full min-h-screen'}>
-            <div className="w-[60%] h-[90%] bg-white p-16 rounded-xl">
+            <div className="w-[60%] h-[90%] bg-white p-16 my-10 rounded-xl">
                 <Heading text={'QR-kod yaratish'}/>
                 <div className="flex flex-col md:flex-row justify-center items-start md:items-center gap-16 mt-10">
                     {/* Left Column */}

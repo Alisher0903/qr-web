@@ -12,7 +12,7 @@ const Networks: React.FC = () => {
     return (
         <div className="flex justify-center items-center bg-bgDarkBlue w-full min-h-[100vh] p-2">
             <div className="w-full sm:w-[90%] md:w-[80%] lg:w-[60%] h-auto bg-white p-8 sm:p-10 md:p-12 lg:p-16 rounded-xl">
-                <Heading text="Ijtimoiy tarmoqlar bilan integratsiya" />
+                <Heading size={'text-xl md:2xl lg:3xl'} text="Ijtimoiy tarmoqlar bilan integratsiya" />
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
                     {data.map((d, index) => (
                         <div key={index} className="bg-lightGreen border border-green/70 rounded-md p-5">

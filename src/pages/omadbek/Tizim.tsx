@@ -26,7 +26,7 @@ const Tizim = () => {
             <div className={`w-full lg:w-[60%] p-4`}>
                 <Heading text={`Tizim monitoringi`} />
                 {data.map(item => (
-                    <div key={item.id} className={'flex items-start justify-start gap-7 mt-10'}>
+                    <div key={item.id} className={'flex items-start justify-start gap-7 mt-10 overflow-x-hidden'}>
                         <div
                             className={'bg-lightGreen border border-green/80 flex justify-center items-center text-xl text-darkBlue rounded-md w-10 h-10 font-bold mt-1'}>
                             {item.id}

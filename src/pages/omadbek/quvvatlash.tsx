@@ -24,7 +24,7 @@ const Quvvatlash: React.FC = () => {
     return (
         <div className={'flex justify-center items-center bg-bgDarkBlue w-full min-h-screen'}>
             <div className="w-full max-w-[950px] h-auto bg-white p-8 md:p-16 rounded-xl">
-                <Heading text={`Foydalanuvchi qo'llab-quvvatlash`} />
+                <Heading size={'text-xl md:2xl lg:3xl'} text={`Foydalanuvchi qo'llab-quvvatlash`} />
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
                     {data.map(({ id, name, des }) => (
                         <Cards

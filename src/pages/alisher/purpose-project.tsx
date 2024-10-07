@@ -28,7 +28,7 @@ const PurposeProject = () => {
                 <div className={`w-full md:w-[40%] overflow-hidden shadow-lg md:rounded-md h-[300px] md:h-auto`}>
                     <img src={img} alt="people img" className={`w-full h-full object-cover shadow-lg`}/>
                 </div>
-                <div className={`w-full md:w-[60%] px-8 md:px-0 mt-10 sm:mt-0`}>
+                <div className={`w-full md:w-[60%] px-6 sm:px-8 md:px-0 mt-10 sm:mt-0`}>
                     <Heading text={`Loyiha maqsadi`}/>
                     {data.map(item => (
                         <div key={item.id} className={'flex items-start justify-start gap-7 mt-10'}>

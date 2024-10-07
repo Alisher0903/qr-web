@@ -24,7 +24,7 @@ const NotificationsNotices = () => {
     return (
         <div className={`max-container min-h-[95vh] flex flex-col lg:flex-row items-center gap-10 py-10`}>
             <div className={`flex-1 p-4`}>
-                <Heading size={'lg:text-5xl'} text={`Bildirishnomalar va xabarnomalar`} />
+                <Heading size={'text-xl md:text3xl lg:text-5xl'} text={`Bildirishnomalar va xabarnomalar`} />
                 <div className={'grid grid-cols-1 gap-5 mt-10'}>
                     {data.map(item => (
                         <div key={item.id} className={'bg-lightGreen border border-green/50 rounded-md p-5 shadow-md'}>
@@ -34,7 +34,7 @@ const NotificationsNotices = () => {
                 </div>
             </div>
             <div className={`flex-1 h-full`}>
-                <img src={img} alt="people img" className={`w-full h-full shadow-lg rounded-md object-cover`} />
+                <img src={img} alt="people img" className={`w-full h-full shadow-lg md:rounded-md object-cover`} />
             </div>
         </div>
     );
