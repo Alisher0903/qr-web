@@ -1,7 +1,7 @@
 import Heading from '../../components/heading';
 import qrApp from "../../assets/qr-section18.avif";
 import { Cards } from '../../components';
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

@@ -3,7 +3,7 @@ import { Cards } from "../../components";
 import img1 from '../../assets/main-components/img1.avif'
 import img2 from '../../assets/main-components/img2.avif'
 import img3 from '../../assets/main-components/img3.avif'
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

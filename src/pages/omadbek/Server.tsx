@@ -1,6 +1,6 @@
 import { Cards } from "../../components";
 import Heading from "../../components/heading";
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 const Server = () => {
