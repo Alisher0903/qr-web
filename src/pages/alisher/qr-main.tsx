@@ -124,7 +124,7 @@ const QrMain = () => {
                             value={postData.phone}
                             onChange={e => {
                                 const val = e.target.value;
-                                if (val.length <= 9) handleInputChange('phone', e.target.value);
+                                if (val.length <= 9 && +val >= 0) handleInputChange('phone', e.target.value);
                             }}
                             onKeyDown={e => {
                                 if (e.key === 'e' || e.key === 'E' || e.key === '+' || e.key === '-') e.preventDefault();
