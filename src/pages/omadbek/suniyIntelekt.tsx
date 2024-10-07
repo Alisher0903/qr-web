@@ -31,7 +31,7 @@ const data = [
 
 const SuniyIntelekt = () => {
     useEffect(() => {
-        AOS.init({ duration: 1000 });
+        AOS.init({ duration: 500 });
     }, []);
     return (
         <div className={`max-container min-h-[60vh] py-10 p-4`}>
