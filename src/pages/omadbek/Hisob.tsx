@@ -37,6 +37,9 @@ const Hisob = () => {
                 backgroundRepeat: 'no-repeat',
                 minHeight: '100vh',
                 padding: '20px',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
             }}
         >
             <div
@@ -56,7 +59,7 @@ const Hisob = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
                     {data.map(({ id, name, des }) => (
-                        <div key={id} className="bg-lightGreen py-8 px-4 rounded-lg" data-aos="fade-up">
+                        <div key={id} className="bg-lightGreen py-8 px-4 rounded-lg overflow-x-hidden" data-aos="fade-up">
                             <Cards
                                 imgSrc={""}
                                 title={name}
