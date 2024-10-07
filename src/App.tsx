@@ -21,16 +21,15 @@ import {
     LocationPayment,
     Networks,
     CrossOpportunities,
-    ControlVoice
+    ControlVoice,
+    Hisob,
+    Kassa,
+    Tizim,
+    Yangilash,
+    Hamkorlik,
+    Kelajak,
+    Statistik
 } from "./pages";
-import Hamkorlik from "./pages/omadbek/Hamkorlik";
-import Hisob from "./pages/omadbek/Hisob";
-import Kassa from "./pages/omadbek/Kassa";
-import Kelajek from "./pages/omadbek/Kelajek";
-import Statistik from "./pages/omadbek/statistik";
-import Tizim from "./pages/omadbek/Tizim";
-import Yangilash from "./pages/omadbek/Yangilash";
-
 
 const App = () => {
     return (
@@ -86,9 +85,8 @@ const App = () => {
                 <Kassa/>
             </div>
             <div className="mt-44">
-                <Kelajek/>
+                <Kelajak/>
             </div>
-
         </div>
     );
 };

@@ -22,11 +22,11 @@ const data = [
 
 const PurposeProject = () => {
     return (
-        <div className={`max-container min-h-[90vh] flex lg:flex-nowrap items-center gap-10 py-10`}>
-            <div className={`w-[40%] h-full`}>
-                <img src={img} alt="people img" className={`w-full h-full shadow-lg rounded-md`}/>
+        <div className={`md:max-w-[950px] md:mx-auto min-h-[90vh] flex md:flex-nowrap flex-wrap justify-center md:justify-between items-center md:gap-10 md:py-10`}>
+            <div className={`w-full md:w-[40%] overflow-hidden shadow-lg md:rounded-md h-[300px] md:h-auto`}>
+                <img src={img} alt="people img" className={`w-full h-full object-cover shadow-lg`}/>
             </div>
-            <div className={`w-[60%]`}>
+            <div className={`w-full md:w-[60%] px-8 md:px-0 mt-10 sm:mt-0`}>
                 <Heading text={`Loyiha maqsadi`}/>
                 {data.map(item => (
                     <div key={item.id} className={'flex items-start justify-start gap-7 mt-10'}>

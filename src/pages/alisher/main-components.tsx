@@ -34,7 +34,7 @@ const data = [
 
 const MainComponents = () => {
     return (
-        <div className={`max-container min-h-[60vh] py-10`}>
+        <div className={`md:max-w-[950px] md:mx-auto min-h-[60vh] py-10 px-8 md:px-0 mt-10 md:mt-0`}>
             <Heading text={`Asosiy komponentlar`}/>
             <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 mt-12`}>
                 {data.map(item => (

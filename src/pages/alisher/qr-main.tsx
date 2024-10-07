@@ -4,24 +4,24 @@ import {styles} from "../../const.ts";
 
 const QrMain = () => {
     return (
-        <div className={`max-container min-h-[80vh] flex lg:flex-nowrap items-center gap-10 py-10`}>
-            <div className={`w-[60%]`}>
+        <div className={`md:max-w-[950px] md:mx-auto min-h-[90vh] flex md:flex-nowrap flex-wrap justify-center md:justify-between items-center md:gap-10 md:py-10`}>
+            <div className={`w-full md:w-[60%] px-8 md:px-0`}>
                 <Heading text={`QR-kod orqali to'lov tizimi`}/>
                 <p className={`${styles.par} mt-6`}>
                     Savdogarlar va xaridorlar uchun zamonaviy va qulay to'lov usuli.
                 </p>
-                <div className={`flex items-center justify-start gap-5 mt-7`}>
-                    <button className={`bg-green/90 text-white rounded-md shadow-md px-6 py-3 font-semibold text-base`}>
+                <div className={`flex md:items-center md:justify-start flex-wrap md:flex-nowrap gap-5 mt-7`}>
+                    <button className={`w-full md:w-auto bg-green/90 text-white rounded-md shadow-md px-6 py-3 font-semibold text-base`}>
                         Boshlash
                     </button>
                     <button
-                        className={`border border-green text-green rounded-md shadow-md px-6 py-3 font-semibold text-base`}>
+                        className={`w-full md:w-auto border border-green text-green rounded-md shadow-md px-6 py-3 font-semibold text-base`}>
                         Batafsil ma'lumot
                     </button>
                 </div>
             </div>
-            <div className={`w-[40%] overflow-hidden shadow-lg rounded-md`}>
-                <img src={img} alt="qr img" className={`w-full h-full`}/>
+            <div className={`w-full md:w-[40%] overflow-hidden shadow-lg md:rounded-md h-[300px] md:h-auto`}>
+                <img src={img} alt="qr img" className={`w-full h-full object-cover shadow-md`}/>
             </div>
         </div>
     );
