@@ -1,5 +1,8 @@
 import Heading from "../../components/heading.tsx";
-import {Cards} from "../../components";
+import { Cards } from "../../components";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const data = [
     {
@@ -17,13 +20,21 @@ const data = [
 ]
 
 const LocationPayment = () => {
+    useEffect(() => {
+        AOS.init({ duration: 1000 });
+    }, []);
     return (
         <div className={'py-10 min-h-[70vh] bg-green flex items-center'}>
             <div className={'max-container p-4'}>
-                <Heading size={'text-xl md:2xl lg:3xl'} text={'Geolokatsiya asosida to\'lovlar'}/>
+                <div data-aos="fade-up">
+                    <Heading size={'text-xl md:2xl lg:3xl'} text={'Geolokatsiya asosida to\'lovlar'} />
+                </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
                     {data.map(d => (
-                        <Cards imgStyle={'w-full'} title={d.name} description={d.des}/>
+                        <div data-aos="fade-up">
+                            <Cards imgStyle={'w-full'} title={d.name} description={d.des} />
+                        </div>
+
                     ))}
                 </div>
             </div>

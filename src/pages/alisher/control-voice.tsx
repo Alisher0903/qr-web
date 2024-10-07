@@ -4,6 +4,9 @@ import { Cards } from "../../components";
 import { FaUserAlt } from "react-icons/fa";
 import { MdKeyboardVoice } from "react-icons/md";
 import { GrTest } from "react-icons/gr";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const data = [
     {
@@ -27,17 +30,21 @@ const data = [
 ];
 
 const ControlVoice = () => {
+    useEffect(() => {
+        AOS.init({ duration: 1000 });
+    }, []);
     return (
         <div className={`max-container min-h-[100vh] flex flex-col lg:flex-row items-center gap-10 py-10`}>
             <div className={`w-full lg:w-[60%] px-4`}>
-                <Heading size={'text-xl md:2xl lg:3xl'} text={`Ovozli buyruqlar yordamida boshqarish`} />
+                <div data-aos="fade-up">
+                    <Heading size={'text-xl md:2xl lg:3xl'} text={`Ovozli buyruqlar yordamida boshqarish`} /></div>
                 {data.map(item => (
-                    <div key={item.id} className={'mt-8'}>
+                    <div key={item.id} className={'mt-8'} data-aos="fade-up">
                         <Cards isIcon imgSrc={item.img} title={item.name} description={item.des} />
                     </div>
                 ))}
             </div>
-            <div className={`w-full lg:w-[40%] h-full`}>
+            <div className={`w-full lg:w-[40%] h-full`} data-aos="fade-up" >
                 <img src={img} alt="people img" className={`w-full h-full shadow-lg rounded-md`} />
             </div>
         </div>

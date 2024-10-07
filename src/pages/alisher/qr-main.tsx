@@ -1,9 +1,11 @@
 import Heading from "../../components/heading.tsx";
 import img from '../../assets/qr-section1.avif'
 import Modal from "../../components/modal.tsx";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const defVal = {
     fullName: "",
@@ -13,6 +15,9 @@ const defVal = {
 }
 
 const QrMain = () => {
+    useEffect(() => {
+        AOS.init({ duration: 1000 });
+    }, []);
     const [isModal, setIsModal] = useState<boolean>(false)
     const [loading, setLoading] = useState<boolean>(false)
     const [postData, setPostData] = useState<any>(defVal);
@@ -65,11 +70,13 @@ const QrMain = () => {
             <div
                 className={`md:max-w-[950px] md:mx-auto min-h-[90vh] flex md:flex-nowrap flex-wrap justify-center md:justify-between items-center md:gap-10 md:py-10`}>
                 <div className={`w-full md:w-[60%] px-8 md:px-0`}>
-                    <Heading text={`QR-kod orqali to'lov tizimi`}/>
-                    <p className={`${styles.par} mt-6`}>
+                    <div data-aos="fade-up">
+                        <Heading text={`QR-kod orqali to'lov tizimi`}/>
+                        </div>
+                    <p className={`${styles.par} mt-6`} data-aos="fade-up">
                         Savdogarlar va xaridorlar uchun zamonaviy va qulay to'lov usuli.
                     </p>
-                    <div className={`flex md:items-center md:justify-start flex-wrap md:flex-nowrap gap-5 mt-7`}>
+                    <div className={`flex md:items-center md:justify-start flex-wrap md:flex-nowrap gap-5 mt-7`} data-aos="fade-up">
                         <button
                             onClick={openModal}
                             className={`w-full md:w-auto bg-green/90 text-white rounded-md shadow-md px-6 py-3 font-semibold text-base`}>
@@ -83,11 +90,10 @@ const QrMain = () => {
                         </button>
                     </div>
                 </div>
-                <div className={`w-full md:w-[40%] overflow-hidden shadow-lg md:rounded-md h-[300px] md:h-auto`}>
+                <div className={`w-full md:w-[40%] overflow-hidden shadow-lg md:rounded-md h-[300px] md:h-auto`} data-aos="fade-up">
                     <img src={img} alt="qr img" className={`w-full h-full object-cover shadow-md`}/>
                 </div>
             </div>
-
             <Modal
                 key={'qr open web'}
                 isOpen={isModal}

@@ -4,6 +4,9 @@ import { Cards } from "../../components";
 import { FaGifts } from "react-icons/fa";
 import { MdCreditCard } from "react-icons/md";
 import { IoMdNotifications } from "react-icons/io";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const data = [
     {
@@ -27,15 +30,20 @@ const data = [
 ];
 
 const ProgramsCashback = () => {
+    useEffect(() => {
+        AOS.init({ duration: 1000 });
+    }, []);
     return (
         <div className="max-container min-h-[100vh] flex flex-col lg:flex-row items-center gap-8 py-10">
-            <div className="w-full lg:w-1/2 h-full">
+            <div className="w-full lg:w-1/2 h-full" data-aos="fade-up">
                 <img src={img} alt="Loyalty Programs" className="w-full h-full shadow-lg rounded-md" />
             </div>
             <div className="w-full lg:w-1/2 p-4">
-                <Heading text="Loyallik dasturlari va cashback" />
+                <div data-aos="fade-up">
+                    <Heading text="Loyallik dasturlari va cashback" />
+                </div>
                 {data.map(item => (
-                    <div key={item.id} className="mt-6">
+                    <div key={item.id} className="mt-6" data-aos="fade-up">
                         <Cards isIcon imgSrc={item.img} title={item.name} description={item.des} />
                     </div>
                 ))}

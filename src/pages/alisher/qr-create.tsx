@@ -1,6 +1,8 @@
 import React from "react";
 import Heading from "../../components/heading.tsx";
 import {Cards} from "../../components";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const data = [
     {
@@ -13,14 +15,17 @@ const data = [
 ]
 
 const QrCreate: React.FC = () => {
+    
     return (
         <div className={'flex justify-center items-center bg-bgDarkBlue w-full min-h-screen'}>
             <div className="w-[95%] lg:w-[60%] h-[90%] bg-white p-16 my-10 rounded-xl">
-                <Heading text={'QR-kod yaratish'}/>
+                <div data-aos="fade-up">
+                  <Heading text={'QR-kod yaratish'}/>  
+                </div>
                 <div className="flex flex-col md:flex-row justify-center items-start md:items-center gap-16 mt-10">
                     <div className={`lg:hidden grid grid-cols-1 md:grid-cols-2 gap-6`}>
                         {data.map(item => (
-                            <div className={'flex justify-start items-start gap-6'} key={item.id}>
+                            <div className={'flex justify-start items-start gap-6'} key={item.id} data-aos="fade-up">
                                 <StepNumber number={item.id}/>
                                 <Cards
                                     title={item.name}
@@ -31,7 +36,7 @@ const QrCreate: React.FC = () => {
                     </div>
 
                     {/* Left Column */}
-                    <div className="lg:flex flex-col items-start gap-12 hidden">
+                    <div className="lg:flex flex-col items-start gap-12 hidden" data-aos="fade-up">
                         <Cards
                             title={'To\'lov miqdorini kiritish'}
                             description={'Savdogar to\'lov miqdorini kiritadi yoki xaridor uni dinamik ravishda kiritish imkoniyatiga ega bo\'ladi.'}
@@ -50,7 +55,7 @@ const QrCreate: React.FC = () => {
                     </div>
 
                     {/* Right Column */}
-                    <div className="lg:flex flex-col items-start hidden">
+                    <div className="lg:flex flex-col items-start hidden" data-aos="fade-up">
                         <Cards
                             title="Tavsif qo'shish"
                             description="To'lovga ixtiyoriy ravishda tavsif qo'shish mumkin."
