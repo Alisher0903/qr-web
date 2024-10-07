@@ -1,5 +1,5 @@
 import Heading from "../../components/heading.tsx";
-import {Cards} from "../../components";
+import { Cards } from "../../components";
 
 const data = [
     {
@@ -17,21 +17,20 @@ const data = [
         name: 'Boshqarish',
         des: 'Abonementlar va muntazam toʻlovlarni samarali boshqarish va tahlil qilish.'
     },
-]
+];
 
 const SubscriptionPayments = () => {
     return (
-        <div className={'flex justify-center items-center bg-bgDarkBlue w-full min-h-[90vh]'}>
-            <div className="w-[70%] h-[90%] bg-white p-16 rounded-xl">
-                <Heading size={'lg:text-5xl'} text={`Abonement va muntazam toʻlovlar`}/>
-                <div className={'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16'}>
+        <div className="flex justify-center items-center bg-bgDarkBlue w-full min-h-screen">
+            <div className="w-full max-w-[95%] md:max-w-[80%] lg:max-w-[70%] h-auto bg-white p-6 md:p-10 lg:p-12 rounded-xl shadow-lg">
+                <Heading size="lg:text-5xl" text="Abonement va muntazam toʻlovlar" />
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10 mt-8">
                     {data.map(item => (
-                        <div key={item.id} className={'flex items-start justify-start gap-7 mt-10'}>
-                            <div
-                                className={'bg-lightGreen border border-green/80 flex justify-center items-center text-xl text-darkBlue rounded-md w-10 h-10 font-bold mt-1'}>
+                        <div key={item.id} className="flex items-start justify-start gap-4 md:gap-6">
+                            <div className="bg-lightGreen border border-green/80 flex justify-center items-center text-xl text-darkBlue rounded-md w-12 h-12 md:w-10 md:h-10 font-bold mt-1">
                                 {item.id}
                             </div>
-                            <Cards title={item.name} description={item.des}/>
+                            <Cards title={item.name} description={item.des} />
                         </div>
                     ))}
                 </div>

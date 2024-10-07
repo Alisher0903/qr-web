@@ -18,7 +18,7 @@ const data = [
 
 const IntegrationSystems = () => {
     return (
-        <div className={'max-container py-10 min-h-[80vh]'}>
+        <div className={'max-container py-10 min-h-[80vh] p-4'}>
             <Heading text={'Boshqa to\'lov tizimlari bilan integratsiya'}/>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
                 {data.map(d => (
