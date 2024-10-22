@@ -1,6 +1,8 @@
 import {useState} from 'react';
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
 import logos from '../assets/logo/logo.png'
+import {Link} from "react-router-dom";
+import {scrollToSection} from "../pages/home/home.tsx";
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -9,14 +11,13 @@ const Navbar = () => {
     const handleNav = () => setNav(!nav);
 
     const navItems = [
-        {id: 1, text: 'Home'},
-        {id: 2, text: 'Company'},
-        {id: 3, text: 'Resources'},
-        {id: 4, text: 'About'},
+        {id: 1, text: 'Maqsadimiz', url: 'view-more'},
+        {id: 2, text: 'Komponentlar', url: 'main-components'},
+        {id: 3, text: 'Statistikalar', url: 'statistics'}
     ];
 
     return (
-        <div className='bg-darkBlue/90 w-full sticky top-0 shadow-md shadow-bgDarkBlue px-4 py-3 text-white z-[1000]'>
+        <div className='bg-darkBlue/90 w-full sticky top-0 shadow-md shadow-bgDarkBlue px-4 py-3 text-white z-[100]'>
             <div className={'max-w-[1000px] flex justify-between items-center mx-auto'}>
                 <a className={'w-full'}>
                     <img src={logos} alt="qr logos" className={'h-14 hover:cursor-pointer'} onClick={() => {
@@ -29,10 +30,15 @@ const Navbar = () => {
                     {navItems.map(item => (
                         <li
                             key={item.id}
-                            onClick={() => setActive(item.id)}
+                            onClick={() => {
+                                setActive(item.id)
+                                scrollToSection(item.url)
+                            }}
                             className={`${active === item.id ? 'bg-[#00df9a] text-bgDarkBlue' : ''} px-4 py-2 hover:bg-[#00df9a] rounded-xl m-2 cursor-pointer duration-300 hover:text-bgDarkBlue`}
                         >
-                            {item.text}
+                            <Link to={'/'}>
+                                {item.text}
+                            </Link>
                         </li>
                     ))}
                 </ul>
@@ -52,19 +58,26 @@ const Navbar = () => {
                 >
                     {/* Mobile Logo */}
                     <a className={'w-full'}>
-                        <img src={logos} alt="qr logos" className={'m-4 mb-10 h-14 hover:cursor-pointer'} onClick={() => {
-                            window.location.reload()
-                        }}/>
+                        <img src={logos} alt="qr logos" className={'m-4 mb-10 h-14 hover:cursor-pointer'}
+                             onClick={() => {
+                                 window.location.reload()
+                             }}
+                        />
                     </a>
 
                     {/* Mobile Navigation Items */}
                     {navItems.map(item => (
                         <li
-                            onClick={() => setActive(item.id)}
+                            onClick={() => {
+                                setActive(item.id)
+                                scrollToSection(item.url)
+                            }}
                             key={item.id}
                             className={`${active === item.id ? 'bg-[#00df9a] text-bgDarkBlue' : ''} p-4 my-3 mx-2 border-b rounded-xl hover:bg-[#00df9a] duration-300 hover:text-bgDarkBlue cursor-pointer border-gray-600`}
                         >
-                            {item.text}
+                            <Link to={'/'}>
+                                {item.text}
+                            </Link>
                         </li>
                     ))}
                 </ul>
