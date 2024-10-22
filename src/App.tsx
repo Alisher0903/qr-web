@@ -31,6 +31,8 @@ import {
     Statistik
 } from "./pages";
 import {useEffect} from "react";
+import Navbar from "./components/navbar.tsx";
+import Footer from "./components/footer.tsx";
 
 const App = () => {
     useEffect(() => {
@@ -41,6 +43,7 @@ const App = () => {
 
     return (
         <div>
+            <Navbar/>
             <QrMain/>
             <PurposeProject/>
             <MainComponents/>
@@ -94,6 +97,7 @@ const App = () => {
             <div className="mt-44">
                 <Kelajak/>
             </div>
+            <Footer/>
         </div>
     );
 };
