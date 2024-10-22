@@ -1,3 +1,5 @@
+import logos from '../assets/logo/logo.png'
+
 const pageList = [
     {id: 1, name: 'Angular', url: '#'},
     {id: 2, name: 'React', url: '#'},
@@ -95,10 +97,9 @@ const Footer = () => {
             <div className="mx-6 py-10 text-center md:text-left">
                 <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                     <div>
-                        <h6
-                            className="mb-4 font-semibold uppercase text-2xl">
-                            СБП QR
-                        </h6>
+                        <a href={'#'}>
+                            <img src={logos} alt="qr logo" className={'mb-10'}/>
+                        </a>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consequatur facere impedit
                             inventore ipsum libero nihil perspiciatis praesentium repellat sed.

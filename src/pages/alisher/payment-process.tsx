@@ -33,7 +33,7 @@ const PaymentProcess = () => {
             </div>
             <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-12`}>
                 {data.map(item => (
-                    <div data-aos="fade-up">
+                    <div data-aos="fade-up" key={item.id}>
                         <Cards
                             imgStyle={'w-[60%] h-14'}
                             imgSrc={item.img}

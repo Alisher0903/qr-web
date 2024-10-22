@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
+import logos from '../assets/logo/logo.png'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -16,8 +17,12 @@ const Navbar = () => {
 
     return (
         <div className='bg-darkBlue/90 w-full sticky top-0 shadow-md shadow-bgDarkBlue px-4 py-3 text-white z-[1000]'>
-            <div className={'max-w-[980px] flex justify-between items-center mx-auto'}>
-                <h1 className='w-full text-3xl font-bold text-[#00df9a]'><a href={'#'}>СБП QR</a></h1>
+            <div className={'max-w-[1000px] flex justify-between items-center mx-auto'}>
+                <a className={'w-full'}>
+                    <img src={logos} alt="qr logos" className={'h-14 hover:cursor-pointer'} onClick={() => {
+                        window.location.reload()
+                    }}/>
+                </a>
 
                 {/* Desktop Navigation */}
                 <ul className='hidden md:flex'>
@@ -46,7 +51,11 @@ const Navbar = () => {
                     }
                 >
                     {/* Mobile Logo */}
-                    <h1 className='w-full text-3xl font-bold text-[#00df9a] m-4 mb-7'><a href={'#'}>СБП QR</a></h1>
+                    <a className={'w-full'}>
+                        <img src={logos} alt="qr logos" className={'m-4 mb-10 h-14 hover:cursor-pointer'} onClick={() => {
+                            window.location.reload()
+                        }}/>
+                    </a>
 
                     {/* Mobile Navigation Items */}
                     {navItems.map(item => (

@@ -30,8 +30,8 @@ const LocationPayment = () => {
                     <Heading size={'text-xl md:2xl lg:3xl'} text={'Geolokatsiya asosida to\'lovlar'} />
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-                    {data.map(d => (
-                        <div data-aos="fade-up">
+                    {data.map((d, idx) => (
+                        <div data-aos="fade-up" key={idx}>
                             <Cards imgStyle={'w-full'} title={d.name} description={d.des} />
                         </div>
 

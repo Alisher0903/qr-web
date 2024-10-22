@@ -46,7 +46,7 @@ const MainComponents = () => {
             </div>
             <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 mt-12`}>
                 {data.map(item => (
-                    <div data-aos="fade-up">
+                    <div data-aos="fade-up" key={item.id}>
                       <Cards
                         imgSrc={item.img}
                         title={item.name}
